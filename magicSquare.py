@@ -70,7 +70,7 @@ def checkUnique(n, sqArr):
     numSeen = []
     for r in range (n):
         for c in range (n):
-            if sqArr[r][c] in numSeen:
+            if sqArr[r][c] in numSeen or sqArr[r][c] > n**2:
                 return False
             numSeen.append(sqArr[r][c])
     return True
