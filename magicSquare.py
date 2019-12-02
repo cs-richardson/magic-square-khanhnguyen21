@@ -60,7 +60,7 @@ def checkDiag2(n, sqArr, mNum):
 #Compare the sum of the the other diagonal to the mNum
     sum = 0
     for r in range (n):
-            sum = sum + sqArr[n - r - 1][n - r - 1]
+            sum = sum + sqArr[n - 1][n - r - 1]
     if sum != mNum:
         return False
     return True
